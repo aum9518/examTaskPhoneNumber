@@ -65,7 +65,6 @@ public class Phone implements phoneInterface{
     @Override
     public String call(long phoneNumber) {
         for (Contact num:contacts) {
-           // System.out.println("Enter phone number: ");
             if (phoneNumber==num.getPhoneNumber()){
                 return " You are calling to "+num.getFullName();
             }
@@ -76,7 +75,6 @@ public class Phone implements phoneInterface{
     @Override
     public String call(String name) {
         for (Contact nameContact:contacts) {
-           // System.out.println("Enter name of contact: ");
             if (name.equals(nameContact.getFullName())){
                 return "You are colling to "+nameContact.getFullName()+" "+ nameContact.getPhoneNumber();
             }
